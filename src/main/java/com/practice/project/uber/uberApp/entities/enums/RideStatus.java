@@ -1,5 +1,5 @@
 package com.practice.project.uber.uberApp.entities.enums;
 
 public enum RideStatus {
-    CANCELLED, CONFIRMED, ENDED
+    CANCELLED, CONFIRMED, ENDED, ONGOING
 }
