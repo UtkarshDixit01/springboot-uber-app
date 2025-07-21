@@ -3,7 +3,13 @@ package com.practice.project.uber.uberApp.entities;
 import com.practice.project.uber.uberApp.entities.enums.PaymentMethod;
 import com.practice.project.uber.uberApp.entities.enums.PaymentStatus;
 import jakarta.persistence.*;
+import lombok.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 public class Payment {
 
@@ -19,4 +25,7 @@ public class Payment {
 
     @Enumerated(EnumType.STRING)
     private PaymentStatus paymentStatus;
+
+    private Double amount;
+
 }
